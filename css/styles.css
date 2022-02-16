@@ -17,6 +17,7 @@
   --primary-font-famyly: Roboto, sans-serif;
   --secondary-font-family: Raleway, sans-serif;
   --card-set-gat: 30px;
+  --color-icons: #afb1b8;
 }
 body {
   color: var(--basic-color-text);
@@ -132,6 +133,7 @@ nav {
   letter-spacing: 0.02em;
   color: var(--basic-color-text);
 }
+
 .link.nav:hover,
 .link.nav:focus,
 .feedback.link:hover,
@@ -254,6 +256,35 @@ nav {
   font-weight: 500;
 
   color: var(--secondary-color-text);
+}
+.social-link-list {
+  display: flex;
+  margin-top: 16px;
+  padding-left: 32px;
+  padding-right: 32px;
+  align-items: center;
+  justify-content: space-between;
+}
+.social-link {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+.social-link-icon {
+  fill: var(--color-icons);
+}
+.social-link:hover,
+.social-link:focus {
+  background-color: var(--accent-color);
+}
+.social-link:hover .social-link-icon {
+  fill: var(--primary-white-color);
+}
+.social-link:focus .social-link-icon {
+  fill: var(--primary-white-color);
 }
 /* ===sections primary page end=== */
 /* ===section portfolio page start=== */
