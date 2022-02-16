@@ -118,10 +118,6 @@ nav {
   display: flex;
   margin-left: auto;
 }
-.icon-envelope {
-  outline: 1px solid red;
-  fill: currentColor;
-}
 .site-nav .item:not(:last-child),
 .contacts .item:not(:last-child) {
   margin-right: 50px;
