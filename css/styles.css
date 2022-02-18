@@ -133,7 +133,30 @@ nav {
   letter-spacing: 0.02em;
   color: var(--basic-color-text);
 }
-
+.item.contacts-header {
+  display: flex;
+}
+.icon-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+}
+.icon-envelope,
+.icon-smartphone {
+  fill: var(--basic-color-text);
+}
+.contacts-header:hover .feedback {
+  color: var(--accent-color);
+}
+.contacts-header:hover .icon-envelope,
+.contacts-header:hover .icon-smartphone {
+  fill: var(--accent-color);
+}
+.icon-link:focus .icon-envelope,
+.icon-link:focus .icon-smartphone {
+  fill: var(--accent-color);
+}
 .link.nav:hover,
 .link.nav:focus,
 .feedback.link:hover,
@@ -234,6 +257,16 @@ nav {
 
   color: var(--secondary-color-text);
 }
+.icon-features {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 270px;
+  height: 120px;
+  margin-bottom: 30px;
+  background-color: var(--secondary-bg-color);
+  border-radius: 4px;
+}
 
 .team-section {
   background-color: var(--secondary-bg-color);
@@ -265,6 +298,7 @@ nav {
   align-items: center;
   justify-content: space-between;
 }
+
 .social-link {
   width: 44px;
   height: 44px;
@@ -362,4 +396,11 @@ nav {
 
   color: var(--footer-contact-color);
 }
+.social-link-list-footer {
+  display: flex;
+}
+.social-link-list-footer .social-link-item:not(:last-child) {
+  margin-right: 10px;
+}
+
 /* ===footer end=== */
