@@ -146,6 +146,8 @@ nav {
 }
 .link.nav {
   color: var(--secondary-color-text);
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 .feedback.link {
   font-weight: 500;
@@ -154,30 +156,18 @@ nav {
   letter-spacing: 0.02em;
   color: var(--basic-color-text);
 }
-.item.contacts-header {
+.icon-item {
   display: flex;
-}
-.icon-link {
-  display: flex;
-  justify-content: center;
   align-items: center;
-  margin-right: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 .icon-envelope,
 .icon-smartphone {
-  fill: var(--basic-color-text);
+  margin-right: 10px;
+  fill: currentColor;
 }
-.contacts-header:hover .feedback {
-  color: var(--accent-color);
-}
-.contacts-header:hover .icon-envelope,
-.contacts-header:hover .icon-smartphone {
-  fill: var(--accent-color);
-}
-.icon-link:focus .icon-envelope,
-.icon-link:focus .icon-smartphone {
-  fill: var(--accent-color);
-}
+
 .link.nav:hover,
 .link.nav:focus,
 .feedback.link:hover,
